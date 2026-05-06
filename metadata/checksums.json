@@ -2352,9 +2352,9 @@
       "sha256": "5354481a0f69f81607be832af6da811bcb7a221b09b59fa7361a5c1d6dec6631"
     },
     {
-      "bytes": 11061,
+      "bytes": 11049,
       "path": "metadata/hotpot_maxionbench_croissant.json",
-      "sha256": "39dc7cb48debe9e66be88aa6fea95cd5920d25221a8db808b6cf22a9423a383b"
+      "sha256": "046eb5fbce9908b08d41e7430edc2d2861d6d384a5e5b3b18450f6b288e4aae7"
     },
     {
       "bytes": 962,
@@ -2367,9 +2367,9 @@
       "sha256": "e94d1555e83edaaf14fdd17ca5e353447457ca058706182473dc584c4db81952"
     },
     {
-      "bytes": 1637,
+      "bytes": 1613,
       "path": "paper/anonymous_memtrace/README.md",
-      "sha256": "e695ebd8aa69aef426d9c078f0a6bc39d7806a9995a38cafe0926d96f801198a"
+      "sha256": "27f971c5264024cf68a6c91cc4b58e8faebebc705b4537cdb5fe2a51ede35921"
     },
     {
       "bytes": 1740,
@@ -2777,9 +2777,9 @@
       "sha256": "f43a99dcd6007e44ee28cc9a0fd76fd3501973afa529176b54c4264930d83e1d"
     },
     {
-      "bytes": 10124,
+      "bytes": 10112,
       "path": "paper/metadata/hotpotqa_portable_croissant.jsonld",
-      "sha256": "0b42c8cad75094f5436989c092ee6cd9d7aacc9b8c1fafb06f4ce87661aa5f89"
+      "sha256": "9f96a7b1e4cb657ba5f09b630a2b0d5618fb7d68fcc691cb9e4e9c011181719b"
     },
     {
       "bytes": 4025,
@@ -5302,6 +5302,6 @@
       "sha256": "37286d5d3d15273e293cd9039f88f8b4b07626fb1363aa8f47aac27f1f863e28"
     }
   ],
-  "generated_at_utc": "2026-05-06T15:35:47Z",
+  "generated_at_utc": "2026-05-06T16:28:50Z",
   "package_root": "reviewer_artifact_maxionbench"
 }

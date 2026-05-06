@@ -327,7 +327,7 @@
     "qrels.tsv": "b3a730a7d8da70297606f44d50d21aa99c32f44609e6d6d335e394da38234f7a",
     "queries.jsonl": "3cfd41505b31df3ddc43a61841233a593b6e3a238bab781f850b840a02e0b54b"
   },
-  "url": "https://anonymous.4open.science/r/retrieval-audit-artifact-8FDA",
+  "url": "https://anonymous.4open.science/r/retrieval-db-6FB8",
   "variableMeasured": [
     "evidence_coverage_at_10",
     "retrieval_latency_ms",

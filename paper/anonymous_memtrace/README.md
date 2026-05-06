@@ -4,8 +4,8 @@ This directory records the anonymous upload handoff for the NeurIPS reviewer art
 
 ## Anonymous Artifact
 
-- Anonymous artifact ID: `retrieval-audit-artifact-8FDA`
-- Target reviewer URL: `https://anonymous.4open.science/r/retrieval-audit-artifact-8FDA`
+- Anonymous artifact ID: `retrieval-db-6FB8`
+- Target reviewer URL: `https://anonymous.4open.science/r/retrieval-db-6FB8`
 - Local package candidate: the current tarball path is tracked in the local maintainer status file. That status file is intentionally excluded from the tarball to avoid self-referential package hashes.
 
 ## Manual Upload Gate

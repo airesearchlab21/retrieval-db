@@ -61,7 +61,7 @@
     "name": "Anonymous NeurIPS submission"
   },
   "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "url": "https://anonymous.4open.science/r/retrieval-audit-artifact-8FDA",
+  "url": "https://anonymous.4open.science/r/retrieval-db-6FB8",
   "citeAs": "@inproceedings{yang2018hotpotqa, title={HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering}, author={Yang, Zhilin and Qi, Peng and Zhang, Saizheng and Bengio, Yoshua and Cohen, William and Salakhutdinov, Ruslan and Manning, Christopher D.}, booktitle={EMNLP}, year={2018}}",
   "citation": "Yang et al., HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering, EMNLP 2018.",
   "keywords": [
