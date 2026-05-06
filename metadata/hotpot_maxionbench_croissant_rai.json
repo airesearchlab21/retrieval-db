@@ -1,0 +1,18 @@
+{
+  "counts": {
+    "doc_count": 66635,
+    "qrel_count": 14810,
+    "question_count": 7405
+  },
+  "data_collection": "Derived from the official HotpotQA dev distractor source file.",
+  "data_limitations": "English Wikipedia-derived HotpotQA dev distractor only; paragraph-level evidence granularity; local preprocessing assumptions.",
+  "data_preprocessing": "Paragraph-level corpus, question, qrel, manifest, metadata, and checksum files emitted by maxionbench.tools.preprocess_hotpot_portable.",
+  "dataset_name": "HOTPOTQA-MAXIONBENCH",
+  "intended_use": "Evaluate retrieval infrastructure by evidence coverage, latency, conformance, and task-cost accounting.",
+  "not_intended_use": [
+    "production-scale generalization claims",
+    "end-to-end answer-generation quality evaluation",
+    "claims about managed vector database deployments"
+  ],
+  "responsible_ai_scope": "NeurIPS E&D reviewer artifact metadata for a retrieval-evaluation preprocessing."
+}

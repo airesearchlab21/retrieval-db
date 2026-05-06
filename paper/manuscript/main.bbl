@@ -1,0 +1,320 @@
+\begin{thebibliography}{40}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aum{\"u}ller et~al.(2020)Aum{\"u}ller, Bernhardsson, and
+  Faithfull]{aumuller2020ann}
+Martin Aum{\"u}ller, Erik Bernhardsson, and Alexander Faithfull.
+\newblock {ANN-Benchmarks}: A benchmarking tool for approximate nearest
+  neighbor algorithms.
+\newblock \emph{Information Systems}, 87:\penalty0 101374, 2020.
+
+\bibitem[Bajaj et~al.(2016)Bajaj, Campos, Craswell, Deng, Gao, Liu, Majumder,
+  McNamara, Mitra, Nguyen, Rosenberg, Song, Stoica, Tiwary, and
+  Wang]{bajaj2016msmarco}
+Payal Bajaj, Daniel Campos, Nick Craswell, Li~Deng, Jianfeng Gao, Xiaodong Liu,
+  Rangan Majumder, Andrew McNamara, Bhaskar Mitra, Tri Nguyen, Mir Rosenberg,
+  Xia Song, Alina Stoica, Saurabh Tiwary, and Tong Wang.
+\newblock {MS MARCO}: A human generated {MA}chine reading {CO}mprehension
+  dataset, 2016.
+\newblock URL \url{https://arxiv.org/abs/1611.09268}.
+
+\bibitem[{Beijing Academy of Artificial Intelligence}(2023)]{bge}
+{Beijing Academy of Artificial Intelligence}.
+\newblock {BAAI} general embedding models.
+\newblock \url{https://huggingface.co/BAAI}, 2023.
+\newblock Model identifiers bge-small-en-v1.5 and bge-base-en-v1.5.
+
+\bibitem[Borgeaud et~al.(2022)Borgeaud, Mensch, Hoffmann, Cai, Rutherford,
+  Millican, van~den Driessche, Lespiau, Damoc, Clark,
+  et~al.]{borgeaud2022improving}
+Sebastian Borgeaud, Arthur Mensch, Jordan Hoffmann, Trevor Cai, Eliza
+  Rutherford, Katie Millican, George~Bm van~den Driessche, Jean-Baptiste
+  Lespiau, Bogdan Damoc, Aidan Clark, et~al.
+\newblock Improving language models by retrieving from trillions of tokens.
+\newblock In \emph{Proceedings of the 39th International Conference on Machine
+  Learning}, volume 162 of \emph{Proceedings of Machine Learning Research},
+  pages 2206--2240. PMLR, 2022.
+\newblock URL \url{https://proceedings.mlr.press/v162/borgeaud22a.html}.
+
+\bibitem[Dean and Barroso(2013)]{dean2013tail}
+Jeffrey Dean and Luiz~Andr{\'e} Barroso.
+\newblock The tail at scale.
+\newblock \emph{Communications of the ACM}, 56\penalty0 (2):\penalty0 74--80,
+  2013.
+
+\bibitem[Es et~al.(2024)Es, James, Espinosa-Anke, and Schockaert]{es2024ragas}
+Shahul Es, Jithin James, Luis Espinosa-Anke, and Steven Schockaert.
+\newblock {RAGAS}: Automated evaluation of retrieval augmented generation.
+\newblock In \emph{Proceedings of the 18th Conference of the European Chapter
+  of the Association for Computational Linguistics: System Demonstrations},
+  2024.
+
+\bibitem[{Facebook Research}(2024)]{facebookcrag}
+{Facebook Research}.
+\newblock {CRAG}: Comprehensive rag benchmark.
+\newblock \url{https://github.com/facebookresearch/CRAG}, 2024.
+\newblock Dataset source used for the CRAG-500 event stream.
+
+\bibitem[Friel et~al.(2024)Friel, Belyi, and Sanyal]{friel2024ragbench}
+Robert Friel, Masha Belyi, and Atindriyo Sanyal.
+\newblock {RAGBench}: Explainable benchmark for retrieval-augmented generation
+  systems, 2024.
+
+\bibitem[Gebru et~al.(2021)Gebru, Morgenstern, Vecchione, Vaughan, Wallach,
+  Daum{\'e}~III, and Crawford]{gebru2021datasheets}
+Timnit Gebru, Jamie Morgenstern, Briana Vecchione, Jennifer~Wortman Vaughan,
+  Hanna Wallach, Hal Daum{\'e}~III, and Kate Crawford.
+\newblock Datasheets for datasets.
+\newblock \emph{Communications of the ACM}, 64\penalty0 (12):\penalty0 86--92,
+  2021.
+
+\bibitem[Guu et~al.(2020)Guu, Lee, Tung, Pasupat, and Chang]{guu2020retrieval}
+Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, and Mingwei Chang.
+\newblock Retrieval augmented language model pre-training.
+\newblock In \emph{Proceedings of the 37th International Conference on Machine
+  Learning}, volume 119 of \emph{Proceedings of Machine Learning Research},
+  pages 3929--3938. PMLR, 2020.
+\newblock URL \url{https://proceedings.mlr.press/v119/guu20a.html}.
+
+\bibitem[Izacard and Grave(2021)]{izacard2021leveraging}
+Gautier Izacard and Edouard Grave.
+\newblock Leveraging passage retrieval with generative models for open domain
+  question answering.
+\newblock In \emph{Proceedings of the 16th Conference of the European Chapter
+  of the Association for Computational Linguistics: Main Volume}, pages
+  874--880, 2021.
+\newblock \doi{10.18653/v1/2021.eacl-main.74}.
+\newblock URL \url{https://aclanthology.org/2021.eacl-main.74/}.
+
+\bibitem[J{\'e}gou et~al.(2011)J{\'e}gou, Douze, and Schmid]{jegou2011product}
+Herv{\'e} J{\'e}gou, Matthijs Douze, and Cordelia Schmid.
+\newblock Product quantization for nearest neighbor search.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 33\penalty0 (1):\penalty0 117--128, 2011.
+\newblock \doi{10.1109/TPAMI.2010.57}.
+\newblock URL \url{https://doi.org/10.1109/TPAMI.2010.57}.
+
+\bibitem[Johnson et~al.(2019)Johnson, Douze, and J{\'e}gou]{johnson2019faiss}
+Jeff Johnson, Matthijs Douze, and Herv{\'e} J{\'e}gou.
+\newblock Billion-scale similarity search with {GPUs}.
+\newblock \emph{IEEE Transactions on Big Data}, 2019.
+
+\bibitem[Karpukhin et~al.(2020)Karpukhin, Oguz, Min, Lewis, Wu, Edunov, Chen,
+  and Yih]{karpukhin2020dense}
+Vladimir Karpukhin, Barlas Oguz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey
+  Edunov, Danqi Chen, and Wen-tau Yih.
+\newblock Dense passage retrieval for open-domain question answering.
+\newblock In \emph{Proceedings of the 2020 Conference on Empirical Methods in
+  Natural Language Processing}, pages 6769--6781, 2020.
+\newblock \doi{10.18653/v1/2020.emnlp-main.550}.
+\newblock URL \url{https://aclanthology.org/2020.emnlp-main.550/}.
+
+\bibitem[Khattab and Zaharia(2020)]{khattab2020colbert}
+Omar Khattab and Matei Zaharia.
+\newblock {ColBERT}: Efficient and effective passage search via contextualized
+  late interaction over {BERT}.
+\newblock In \emph{Proceedings of the 43rd International ACM SIGIR Conference
+  on Research and Development in Information Retrieval}, pages 39--48, 2020.
+\newblock \doi{10.1145/3397271.3401075}.
+\newblock URL \url{https://doi.org/10.1145/3397271.3401075}.
+
+\bibitem[Kwiatkowski et~al.(2019)Kwiatkowski, Palomaki, Redfield, Collins,
+  Parikh, Alberti, Epstein, Polosukhin, Devlin, Lee, Toutanova, Jones, Kelcey,
+  Chang, Dai, Uszkoreit, Le, and Petrov]{kwiatkowski2019natural}
+Tom Kwiatkowski, Jennimaria Palomaki, Olivia Redfield, Michael Collins, Ankur
+  Parikh, Chris Alberti, Danielle Epstein, Illia Polosukhin, Jacob Devlin,
+  Kenton Lee, Kristina Toutanova, Llion Jones, Matthew Kelcey, Ming-Wei Chang,
+  Andrew~M. Dai, Jakob Uszkoreit, Quoc Le, and Slav Petrov.
+\newblock Natural questions: A benchmark for question answering research.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  7:\penalty0 452--466, 2019.
+\newblock \doi{10.1162/tacl_a_00276}.
+\newblock URL \url{https://aclanthology.org/Q19-1026/}.
+
+\bibitem[{LanceDB}(2024)]{lancedb}
+{LanceDB}.
+\newblock {LanceDB}: Developer-friendly vector database.
+\newblock \url{https://lancedb.com/}, 2024.
+
+\bibitem[Lewis et~al.(2020)Lewis, Perez, Piktus, Petroni, Karpukhin, Goyal,
+  K{\"u}ttler, Lewis, Yih, Rockt{\"a}schel, Riedel, and
+  Kiela]{lewis2020retrieval}
+Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir
+  Karpukhin, Naman Goyal, Heinrich K{\"u}ttler, Mike Lewis, Wen-tau Yih, Tim
+  Rockt{\"a}schel, Sebastian Riedel, and Douwe Kiela.
+\newblock Retrieval-augmented generation for knowledge-intensive {NLP} tasks.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2020.
+\newblock URL \url{https://arxiv.org/abs/2005.11401}.
+
+\bibitem[Liang et~al.(2023)Liang, Bommasani, Lee, Tsipras, Soylu, Yasunaga,
+  et~al.]{liang2023helm}
+Percy Liang, Rishi Bommasani, Tony Lee, Dimitris Tsipras, Dilara Soylu,
+  Michihiro Yasunaga, et~al.
+\newblock Holistic evaluation of language models.
+\newblock \emph{Transactions on Machine Learning Research}, 2023.
+
+\bibitem[Liu et~al.(2023)Liu, Yu, Zhang, Xu, Lei, Lai, Gu, Ding, Men, Yang,
+  et~al.]{liu2023agentbench}
+Xiao Liu, Hao Yu, Hanchen Zhang, Yifan Xu, Xuanyu Lei, Hanyu Lai, Yu~Gu,
+  Hangliang Ding, Kaiwen Men, Kejuan Yang, et~al.
+\newblock {AgentBench}: Evaluating {LLMs} as agents, 2023.
+
+\bibitem[Maharana et~al.(2024)Maharana, Lee, Tulyakov, Bansal, Barbieri, and
+  Fang]{maharana2024locomo}
+Adyasha Maharana, Dong-Ho Lee, Sergey Tulyakov, Mohit Bansal, Francesco
+  Barbieri, and Yuwei Fang.
+\newblock Evaluating very long-term conversational memory of {LLM} agents,
+  2024.
+
+\bibitem[Maia et~al.(2018)Maia, Handschuh, Freitas, Davis, McDermott, Zarrouk,
+  and Balahur]{maia2018fiqa}
+Macedo Maia, Siegfried Handschuh, Andr{\'e} Freitas, Brian Davis, Ross
+  McDermott, Manel Zarrouk, and Alexandra Balahur.
+\newblock {WWW'18} open challenge: Financial opinion mining and question
+  answering.
+\newblock In \emph{Companion Proceedings of the Web Conference}, 2018.
+
+\bibitem[Malkov and Yashunin(2020)]{malkov2020efficient}
+Yu~A. Malkov and D.~A. Yashunin.
+\newblock Efficient and robust approximate nearest neighbor search using
+  hierarchical navigable small world graphs.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 42\penalty0 (4):\penalty0 824--836, 2020.
+\newblock \doi{10.1109/TPAMI.2018.2889473}.
+\newblock URL \url{https://doi.org/10.1109/TPAMI.2018.2889473}.
+
+\bibitem[{MLCommons}(2024)]{mlcommons2024croissant}
+{MLCommons}.
+\newblock Croissant format specification, version 1.0.
+\newblock \url{https://docs.mlcommons.org/croissant/docs/croissant-spec.html},
+  2024.
+\newblock Published March 1, 2024.
+
+\bibitem[Muennighoff et~al.(2023)Muennighoff, Tazi, Magne, and
+  Reimers]{muennighoff2023mteb}
+Niklas Muennighoff, Nouamane Tazi, Lo{\"i}c Magne, and Nils Reimers.
+\newblock {MTEB}: Massive text embedding benchmark.
+\newblock In \emph{Proceedings of the 17th Conference of the European Chapter
+  of the Association for Computational Linguistics}, 2023.
+
+\bibitem[Muja and Lowe(2014)]{muja2014scalable}
+Marius Muja and David~G. Lowe.
+\newblock Scalable nearest neighbor algorithms for high dimensional data.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 36\penalty0 (11):\penalty0 2227--2240, 2014.
+\newblock \doi{10.1109/TPAMI.2014.2321376}.
+\newblock URL \url{https://doi.org/10.1109/TPAMI.2014.2321376}.
+
+\bibitem[Packer et~al.(2023)Packer, Fang, Patil, Lin, Wooders, and
+  Gonzalez]{packer2023memgpt}
+Charles Packer, Vivian Fang, Shishir~G. Patil, Kevin Lin, Sarah Wooders, and
+  Joseph~E. Gonzalez.
+\newblock {MemGPT}: Towards {LLMs} as operating systems, 2023.
+
+\bibitem[Petroni et~al.(2021)Petroni, Piktus, Fan, Lewis, Yazdani, De~Cao,
+  Thorne, Jernite, Karpukhin, Maillard, Plachouras, Rockt{\"a}schel, and
+  Riedel]{petroni2021kilt}
+Fabio Petroni, Aleksandra Piktus, Angela Fan, Patrick Lewis, Majid Yazdani,
+  Nicola De~Cao, James Thorne, Yacine Jernite, Vladimir Karpukhin, Jean
+  Maillard, Vassilis Plachouras, Tim Rockt{\"a}schel, and Sebastian Riedel.
+\newblock {KILT}: a benchmark for knowledge intensive language tasks.
+\newblock In \emph{Proceedings of the 2021 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies}, pages 2523--2544, 2021.
+\newblock \doi{10.18653/v1/2021.naacl-main.200}.
+\newblock URL \url{https://aclanthology.org/2021.naacl-main.200/}.
+
+\bibitem[{pgvector contributors}(2024)]{pgvector}
+{pgvector contributors}.
+\newblock {pgvector}: Open-source vector similarity search for {PostgreSQL}.
+\newblock \url{https://github.com/pgvector/pgvector}, 2024.
+
+\bibitem[{Qdrant contributors}(2024)]{qdrant}
+{Qdrant contributors}.
+\newblock {Qdrant}: Vector database and similarity search engine.
+\newblock \url{https://qdrant.tech/}, 2024.
+
+\bibitem[Reddi et~al.(2020)Reddi, Cheng, Kanter, Mattson, Schmuelling, Wu,
+  et~al.]{reddi2019mlperf}
+Vijay~Janapa Reddi, Christine Cheng, David Kanter, Peter Mattson, Guenther
+  Schmuelling, Carole-Jean Wu, et~al.
+\newblock {MLPerf} inference benchmark.
+\newblock In \emph{2020 ACM/IEEE 47th Annual International Symposium on
+  Computer Architecture}, 2020.
+
+\bibitem[Reimers and Gurevych(2019)]{reimers2019sentence}
+Nils Reimers and Iryna Gurevych.
+\newblock Sentence-{BERT}: Sentence embeddings using {S}iamese {BERT}-networks.
+\newblock In \emph{Proceedings of the 2019 Conference on Empirical Methods in
+  Natural Language Processing and the 9th International Joint Conference on
+  Natural Language Processing}, pages 3982--3992, 2019.
+\newblock \doi{10.18653/v1/D19-1410}.
+\newblock URL \url{https://aclanthology.org/D19-1410/}.
+
+\bibitem[Simhadri et~al.(2021)Simhadri, Williams, Aum{\"u}ller, Douze, Babenko,
+  Baranchuk, Chen, Hosseini, Krishnaswamy, Srinivasa, Subramanya, and
+  Wang]{simhadri2021bigann}
+Harsha~Vardhan Simhadri, George Williams, Martin Aum{\"u}ller, Matthijs Douze,
+  Artem Babenko, Dmitry Baranchuk, Qi~Chen, Lucas Hosseini, Ravishankar
+  Krishnaswamy, Gopal Srinivasa, Suhas~Jayaram Subramanya, and Jingdong Wang.
+\newblock Results of the {NeurIPS'21} challenge on billion-scale approximate
+  nearest neighbor search.
+\newblock In \emph{Proceedings of the NeurIPS 2021 Competitions and
+  Demonstrations Track}, 2021.
+
+\bibitem[Thakur et~al.(2021)Thakur, Reimers, R{\"u}ckl{\'e}, Srivastava, and
+  Gurevych]{thakur2021beir}
+Nandan Thakur, Nils Reimers, Andreas R{\"u}ckl{\'e}, Abhishek Srivastava, and
+  Iryna Gurevych.
+\newblock {BEIR}: A heterogeneous benchmark for zero-shot evaluation of
+  information retrieval models.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2021.
+
+\bibitem[Wadden et~al.(2020)Wadden, Lin, Lo, Wang, van Zuylen, Cohan, and
+  Hajishirzi]{wadden2020scifact}
+David Wadden, Shanchuan Lin, Kyle Lo, Lucy~Lu Wang, Madeleine van Zuylen, Arman
+  Cohan, and Hannaneh Hajishirzi.
+\newblock {SciFact}: A dataset for fact verification of scientific claims.
+\newblock In \emph{Proceedings of the 2020 Conference on Empirical Methods in
+  Natural Language Processing}, 2020.
+
+\bibitem[Wang et~al.(2022)Wang, Yang, Huang, Jiao, Yang, Jiang, Majumder, and
+  Wei]{wang2022text}
+Liang Wang, Nan Yang, Xiaolong Huang, Binxing Jiao, Linjun Yang, Daxin Jiang,
+  Rangan Majumder, and Furu Wei.
+\newblock Text embeddings by weakly-supervised contrastive pre-training, 2022.
+\newblock URL \url{https://arxiv.org/abs/2212.03533}.
+
+\bibitem[Wu et~al.(2024)Wu, Wang, Yu, Zhang, Chang, and Yu]{wu2024longmemeval}
+Di~Wu, Hongwei Wang, Wenhao Yu, Yuwei Zhang, Kai-Wei Chang, and Dong Yu.
+\newblock {LongMemEval}: Benchmarking chat assistants on long-term interactive
+  memory, 2024.
+
+\bibitem[Xiong et~al.(2021)Xiong, Xiong, Li, Tang, Liu, Bennett, Ahmed, and
+  Overwijk]{xiong2021approximate}
+Lee Xiong, Chenyan Xiong, Ye~Li, Kwok-Fung Tang, Jialin Liu, Paul Bennett,
+  Junaid Ahmed, and Arnold Overwijk.
+\newblock Approximate nearest neighbor negative contrastive learning for dense
+  text retrieval.
+\newblock In \emph{International Conference on Learning Representations}, 2021.
+\newblock URL \url{https://openreview.net/forum?id=zeFrfgyZln}.
+
+\bibitem[Yang et~al.(2018)Yang, Qi, Zhang, Bengio, Cohen, Salakhutdinov, and
+  Manning]{yang2018hotpotqa}
+Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William~W. Cohen, Ruslan
+  Salakhutdinov, and Christopher~D. Manning.
+\newblock {HotpotQA}: A dataset for diverse, explainable multi-hop question
+  answering.
+\newblock In \emph{Proceedings of the 2018 Conference on Empirical Methods in
+  Natural Language Processing}, 2018.
+
+\bibitem[{Zilliz}(2023)]{vectordbbench}
+{Zilliz}.
+\newblock {VectorDBBench}: A benchmark tool for vector databases.
+\newblock \url{https://github.com/zilliztech/VectorDBBench}, 2023.
+
+\end{thebibliography}

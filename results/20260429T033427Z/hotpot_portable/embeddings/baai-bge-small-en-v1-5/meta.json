@@ -1,0 +1,17 @@
+{
+  "batch_size": 16,
+  "created_at_utc": "2026-04-23T21:15:08.556523Z",
+  "device": "mps",
+  "dim": 384,
+  "doc_count": 66635,
+  "doc_ids_sha256": "ea446e4f2564916d1858368f0650c3f7de14634ed778f084045149ff53ac452c",
+  "max_length": 512,
+  "model_id": "BAAI/bge-small-en-v1.5",
+  "normalize": true,
+  "pooling": "mean",
+  "precompute_version": "0.1",
+  "processed_dataset_schema_version": "maxionbench-processed-v1",
+  "query_count": 7405,
+  "query_ids_sha256": "4aa3b6836c8e4e6d3554b0732d7f22f6cbe5751e4e23b1be91886ef5bddeb829",
+  "schema_version": "maxionbench-text-embeddings-v1"
+}

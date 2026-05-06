@@ -1,0 +1,9 @@
+{
+  "config_dir": "REPO_ROOT/configs/conformance",
+  "container_image": "",
+  "container_runtime": "",
+  "generated_at_utc": "2026-04-25T21:44:51.259385+00:00",
+  "hostname": "anonymous-host",
+  "matrix_path": "REPO_ROOT/artifacts/conformance/conformance_matrix.csv",
+  "python_executable": "ANONYMIZED_HOME/anaconda3/envs/maxion/bin/python3.11"
+}

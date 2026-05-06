@@ -1,0 +1,4 @@
+engine: lancedb-inproc
+engine_version: "local"
+adapter_options:
+  uri: /tmp/maxionbench/lancedb/s1_s2_lancedb_paired

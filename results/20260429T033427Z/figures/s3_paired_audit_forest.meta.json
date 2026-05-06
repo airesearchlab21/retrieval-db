@@ -1,0 +1,10 @@
+{
+  "dpi": 600,
+  "figure_name": "s3_paired_audit_forest",
+  "font_size": 9,
+  "generated_at_utc": "2026-05-06T03:14:04.043901+00:00",
+  "mode": "maxionbench",
+  "rows_used": 2,
+  "source_path": "paper/experiments/s3_paired_quality/summary.json",
+  "style_version": "portable_v6_publication_figures"
+}

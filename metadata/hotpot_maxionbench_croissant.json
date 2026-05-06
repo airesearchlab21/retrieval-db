@@ -1,0 +1,337 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "equivalentProperty": "cr:equivalentProperty",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileObject": "cr:fileObject",
+    "fileProperty": "cr:fileProperty",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "alternateName": "HotpotQA-MaxionBench",
+  "citation": "Yang et al., HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering, EMNLP 2018.",
+  "citeAs": "@inproceedings{yang2018hotpotqa, title={HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering}, author={Yang, Zhilin and Qi, Peng and Zhang, Saizheng and Bengio, Yoshua and Cohen, William and Salakhutdinov, Ruslan and Manning, Christopher D.}, booktitle={EMNLP}, year={2018}}",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "creator": {
+    "@type": "Organization",
+    "name": "Anonymous NeurIPS submission"
+  },
+  "dateCreated": "2026-04-29",
+  "datePublished": "2026-04-29",
+  "description": "A bounded retrieval-evaluation preprocessing of HotpotQA dev distractor used by MaxionBench S3 multi-evidence retrieval. Records include paragraph-level documents, natural-language questions, and qrels derived from supporting facts.",
+  "distribution": [
+    {
+      "@id": "corpus_file",
+      "@type": "cr:FileObject",
+      "contentUrl": "dataset/processed/hotpot_portable/corpus.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "name": "corpus.jsonl",
+      "sha256": "05cf6349cf1a292c046deeea13174ef84328afa80de04b2f988e30093cbda16d"
+    },
+    {
+      "@id": "queries_file",
+      "@type": "cr:FileObject",
+      "contentUrl": "dataset/processed/hotpot_portable/queries.jsonl",
+      "encodingFormat": "application/jsonlines",
+      "name": "queries.jsonl",
+      "sha256": "3cfd41505b31df3ddc43a61841233a593b6e3a238bab781f850b840a02e0b54b"
+    },
+    {
+      "@id": "qrels_file",
+      "@type": "cr:FileObject",
+      "contentUrl": "dataset/processed/hotpot_portable/qrels.tsv",
+      "encodingFormat": "text/tab-separated-values",
+      "name": "qrels.tsv",
+      "sha256": "b3a730a7d8da70297606f44d50d21aa99c32f44609e6d6d335e394da38234f7a"
+    },
+    {
+      "@id": "manifest_file",
+      "@type": "cr:FileObject",
+      "contentUrl": "dataset/processed/hotpot_portable/manifest.json",
+      "encodingFormat": "application/json",
+      "name": "manifest.json",
+      "sha256": "bc8d8b87f86af0c95b279b0aaf0593e3b410974df56c86c48cad7832eb4a3db0"
+    },
+    {
+      "@id": "checksums_file",
+      "@type": "cr:FileObject",
+      "contentUrl": "dataset/processed/hotpot_portable/checksums.json",
+      "encodingFormat": "application/json",
+      "name": "checksums.json",
+      "sha256": "14591060f0802dbedd8b7f415013b49434cfddc5b23975129dbb7720f1dc9647"
+    }
+  ],
+  "doc_count": 66635,
+  "file_list": [
+    "corpus.jsonl",
+    "queries.jsonl",
+    "qrels.tsv",
+    "meta.json",
+    "manifest.json"
+  ],
+  "intended_evaluation_use": "Retrieval-infrastructure evaluation and evidence-coverage auditing under the MaxionBench protocol.",
+  "isBasedOn": {
+    "@type": "sc:Dataset",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "name": "HotpotQA dev distractor",
+    "url": "https://hotpotqa.github.io/"
+  },
+  "isLiveDataset": false,
+  "keywords": [
+    "retrieval evaluation",
+    "multi-hop question answering",
+    "agentic retrieval",
+    "evidence coverage",
+    "benchmark"
+  ],
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "measurementTechnique": "Evidence coverage at k over paragraph-level supporting facts.",
+  "name": "HOTPOTQA-MAXIONBENCH",
+  "not_intended_uses": [
+    "production-scale generalization claims",
+    "answer-generation quality claims",
+    "universal engine-ranking claims"
+  ],
+  "qrel_count": 14810,
+  "question_count": 7405,
+  "rai:dataCollection": "HotpotQA-MaxionBench is deterministically derived from the official HotpotQA dev distractor source file. The preprocessing converts supporting-fact titles and contexts into paragraph-level retrieval qrels.",
+  "rai:dataLimitation": "English Wikipedia-derived data, HotpotQA dev distractor only, paragraph-level evidence granularity, and local preprocessing assumptions. Conclusions should be limited to retrieval evidence coverage under the MaxionBench protocol.",
+  "rai:dataPreprocessing": "The MaxionBench preprocessing script emits corpus.jsonl, queries.jsonl, qrels.tsv, manifest.json, meta.json, and checksums.json. The archived manifest records 66,635 documents, 7,405 questions, and 14,810 qrels.",
+  "rai:dataUseCases": "Intended for retrieval-infrastructure evaluation and evidence-coverage auditing. Not intended for training or evaluating answer-generation quality.",
+  "recordSet": [
+    {
+      "@id": "corpus_records",
+      "@type": "cr:RecordSet",
+      "description": "Paragraph-level retrieval documents.",
+      "field": [
+        {
+          "@id": "corpus/doc_id",
+          "@type": "cr:Field",
+          "dataType": "sc:Text",
+          "description": "Stable document identifier.",
+          "name": "doc_id",
+          "source": {
+            "extract": {
+              "jsonPath": "$.doc_id"
+            },
+            "fileObject": {
+              "@id": "corpus_file"
+            }
+          }
+        },
+        {
+          "@id": "corpus/title",
+          "@type": "cr:Field",
+          "dataType": "sc:Text",
+          "description": "Source article title.",
+          "name": "title",
+          "source": {
+            "extract": {
+              "jsonPath": "$.title"
+            },
+            "fileObject": {
+              "@id": "corpus_file"
+            }
+          }
+        },
+        {
+          "@id": "corpus/text",
+          "@type": "cr:Field",
+          "dataType": "sc:Text",
+          "description": "Paragraph text used for retrieval.",
+          "name": "text",
+          "source": {
+            "extract": {
+              "jsonPath": "$.text"
+            },
+            "fileObject": {
+              "@id": "corpus_file"
+            }
+          }
+        },
+        {
+          "@id": "corpus/source",
+          "@type": "cr:Field",
+          "dataType": "sc:Text",
+          "description": "Dataset source marker.",
+          "name": "source",
+          "source": {
+            "extract": {
+              "jsonPath": "$.source"
+            },
+            "fileObject": {
+              "@id": "corpus_file"
+            }
+          }
+        }
+      ],
+      "key": "doc_id",
+      "name": "corpus"
+    },
+    {
+      "@id": "query_records",
+      "@type": "cr:RecordSet",
+      "description": "Natural-language multi-hop questions.",
+      "field": [
+        {
+          "@id": "queries/query_id",
+          "@type": "cr:Field",
+          "dataType": "sc:Text",
+          "description": "Stable query identifier.",
+          "name": "query_id",
+          "source": {
+            "extract": {
+              "jsonPath": "$.query_id"
+            },
+            "fileObject": {
+              "@id": "queries_file"
+            }
+          }
+        },
+        {
+          "@id": "queries/text",
+          "@type": "cr:Field",
+          "dataType": "sc:Text",
+          "description": "Question text.",
+          "name": "text",
+          "source": {
+            "extract": {
+              "jsonPath": "$.text"
+            },
+            "fileObject": {
+              "@id": "queries_file"
+            }
+          }
+        },
+        {
+          "@id": "queries/answer",
+          "@type": "cr:Field",
+          "dataType": "sc:Text",
+          "description": "Original HotpotQA answer string.",
+          "name": "answer",
+          "source": {
+            "extract": {
+              "jsonPath": "$.answer"
+            },
+            "fileObject": {
+              "@id": "queries_file"
+            }
+          }
+        }
+      ],
+      "key": "query_id",
+      "name": "queries"
+    },
+    {
+      "@id": "qrel_records",
+      "@type": "cr:RecordSet",
+      "description": "Query-document relevance edges derived from supporting facts.",
+      "field": [
+        {
+          "@id": "qrels/query_id",
+          "@type": "cr:Field",
+          "dataType": "sc:Text",
+          "description": "Query identifier.",
+          "name": "query_id",
+          "source": {
+            "extract": {
+              "column": "query_id"
+            },
+            "fileObject": {
+              "@id": "qrels_file"
+            }
+          }
+        },
+        {
+          "@id": "qrels/doc_id",
+          "@type": "cr:Field",
+          "dataType": "sc:Text",
+          "description": "Relevant document identifier.",
+          "name": "doc_id",
+          "source": {
+            "extract": {
+              "column": "doc_id"
+            },
+            "fileObject": {
+              "@id": "qrels_file"
+            }
+          }
+        },
+        {
+          "@id": "qrels/relevance",
+          "@type": "cr:Field",
+          "dataType": "sc:Integer",
+          "description": "Binary relevance score.",
+          "name": "relevance",
+          "source": {
+            "extract": {
+              "column": "relevance"
+            },
+            "fileObject": {
+              "@id": "qrels_file"
+            }
+          }
+        }
+      ],
+      "key": [
+        "query_id",
+        "doc_id"
+      ],
+      "name": "qrels"
+    }
+  ],
+  "sha256_checksums": {
+    "corpus.jsonl": "05cf6349cf1a292c046deeea13174ef84328afa80de04b2f988e30093cbda16d",
+    "manifest.json": "bc8d8b87f86af0c95b279b0aaf0593e3b410974df56c86c48cad7832eb4a3db0",
+    "meta.json": "14591060f0802dbedd8b7f415013b49434cfddc5b23975129dbb7720f1dc9647",
+    "qrels.tsv": "b3a730a7d8da70297606f44d50d21aa99c32f44609e6d6d335e394da38234f7a",
+    "queries.jsonl": "3cfd41505b31df3ddc43a61841233a593b6e3a238bab781f850b840a02e0b54b"
+  },
+  "url": "https://anonymous.4open.science/r/retrieval-audit-artifact-8FDA",
+  "variableMeasured": [
+    "evidence_coverage_at_10",
+    "retrieval_latency_ms",
+    "task_cost_est"
+  ],
+  "version": "0.1"
+}

@@ -1,0 +1,86 @@
+\documentclass{article}
+
+\usepackage[eandd]{neurips_2026}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\hypersetup{
+  colorlinks=false,
+  pdfborder={0 0 0},
+}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{xspace}
+\usepackage{placeins}
+\usepackage{tabularx}
+
+\newcommand{\sys}{MaxionBench\xspace}
+\newcommand{\hotpotmaxionbench}{HOTPOTQA-MAXIONBENCH\xspace}
+\newcommand{\ndcg}{nDCG@10}
+\newcommand{\ecov}{evidence\_coverage@10}
+\newcommand{\postinsertone}{post\_insert\_hit@10,1s}
+\newcommand{\postinsertfive}{post\_insert\_hit@10,5s}
+\newcommand{\maxrowp}{max-row p99\xspace}
+
+\title{\sys: Conformance-Gated Decision Audits for Agentic Retrieval Memory}
+
+\author{Anonymous Authors}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Agentic AI systems increasingly use retrieval stores as mutable operational memory:
+agents insert evidence, query it under tail-latency budgets, and pay downstream
+context costs for retrieved passages. Existing evaluations split these concerns
+across static information-retrieval benchmarks and vector-database performance
+tests, leaving operators without an auditable way to choose a retrieval stack under
+deployment constraints. We present MaxionBench, a conformance-gated benchmark
+that evaluates retrieval infrastructure as a deployment decision audit rather than
+as a single leaderboard. A fixed adapter contract gates engines before scoring;
+three workloads test static retrieval, post-insert retrievability, and multi-evidence
+retrieval; and each decision card reports quality, a normalized context-cost proxy,
+max-row p99 latency, budget stability, objective sensitivity, and paired margins.
+In a single-node evaluation of FAISS CPU, LanceDB in-process,
+pgvector, and Qdrant, a strict 200 ms max-row p99 policy selects FAISS CPU with
+bge-small for all three workloads. Decision margins show that the static and
+streaming workloads are cost-quality near-ties resolved by tail latency, while the
+multi-evidence workload has both lower cost and higher evidence coverage than the
+nearest strict-cost alternative. Changing the objective changes selected
+configurations; matched audits show that an apparent aggregate pgvector quality
+edge is indistinguishable from FAISS; and short screening runs fail to preserve
+full-budget top-1 decisions on two workloads. MaxionBench therefore reports
+objective-conditioned, auditable deployment evidence for retrieval-memory
+selection.
+\end{abstract}
+
+\input{sections/01_introduction}
+\input{sections/02_benchmark}
+\input{sections/03_related_work}
+\FloatBarrier
+\input{sections/03_experiments}
+\FloatBarrier
+\input{sections/04_limitations}
+\input{sections/05_conclusion}
+
+\FloatBarrier
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\clearpage
+\appendix
+\input{sections/appendix}
+
+\input{checklist}
+
+\end{document}

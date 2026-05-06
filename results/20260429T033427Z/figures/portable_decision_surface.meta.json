@@ -1,0 +1,14 @@
+{
+  "dpi": 600,
+  "figure_name": "portable_decision_surface",
+  "font_size": 9,
+  "generated_at_utc": "2026-05-06T03:14:03.955629+00:00",
+  "mode": "maxionbench",
+  "rows_used": 17,
+  "style_version": "portable_v6_publication_figures",
+  "workloads": [
+    "s1_single_hop",
+    "s2_streaming_memory",
+    "s3_multi_hop"
+  ]
+}

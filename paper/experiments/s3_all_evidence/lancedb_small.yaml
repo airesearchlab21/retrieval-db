@@ -1,0 +1,33 @@
+adapter_options:
+  uri: ${MAXIONBENCH_LANCEDB_INPROC_URI:-/tmp/maxionbench/lancedb/s3_all_evidence_lancedb_small}
+c_llm_in: 0.15
+clients_grid:
+- 4
+clients_read: 4
+clients_write: 0
+dataset_bundle: HOTPOT_PORTABLE
+dataset_hash: portable-s3-hotpotqa-dev-distractor
+embedding_dim: 384
+embedding_model: BAAI/bge-small-en-v1.5
+engine: lancedb-inproc
+engine_version: local
+no_retry: true
+num_queries: 1
+num_vectors: 1
+output_dir: artifacts/runs/neurips_rerun/s3_all_evidence/lancedb_small
+processed_dataset_path: ${MAXIONBENCH_DATASET_ROOT:-dataset}/processed/hotpot_portable
+profile: portable-agentic
+quality_target: 0.3
+quality_targets:
+- 0.3
+repeats: 1
+rpc_baseline_requests: 100
+scenario: s3_multi_hop
+search_sweep:
+- hnsw_ef: 32
+seed: 42
+sla_threshold_ms: 150.0
+steady_state_s: 3600
+top_k: 10
+vector_dim: 384
+warmup_s: 0.001
