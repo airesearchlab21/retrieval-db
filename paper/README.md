@@ -54,6 +54,8 @@ Expected result used by the paper: pass, 72 run directories checked, 0 errors.
 - `manuscript/tables/s3_paired_quality.tex`: 5,000-query matched S3 audit showing no substantive pgvector quality advantage.
 - `manuscript/tables/s2_post_insert_examples.tex`: S2 strict-choice post-insert success/miss counts with archived event/query/document ID examples.
 - `manuscript/tables/s2_competitor_check.tex`: larger same-machine paired S2 FAISS/Qdrant competitor check.
+- `manuscript/tables/cross_engine_scale_stress.tex`: vector-only Qdrant HNSW scale sanity check against FAISS FlatIP top-10.
+- `experiments/corpus_scale_stress/`: FAISS and Qdrant vector-scale stress scripts and JSON outputs.
 - `experiments/s2_larger_same_machine/`: B2 same-machine S2 FAISS/Qdrant rerun with two repeats per engine, 1,788 matched quality observations, and 200 matched post-insert events.
 - `experiments/strict_faiss_repeats/`: JSON summary for completed same-machine strict FAISS repeat artifacts.
 - `experiments/s2_mini_bundle/`: same-orchestration S2 FAISS/Qdrant mini-bundle with two repeats per engine.

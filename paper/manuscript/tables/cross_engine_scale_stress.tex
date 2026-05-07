@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{Controlled Qdrant HNSW vector-scale stress check with 512 bge-small queries on the same real-plus-deterministic-distractor vector sets as Table~\ref{tab:faiss-scale-stress}. Recall is measured against exact FAISS FlatIP top-10 at the same scale. This is a vector-only cross-engine sanity check, not a full MaxionBench workload row.}
+\label{tab:cross-engine-scale-stress}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{rrrrrl}
+\toprule
+Vectors & Qdrant p99 (ms) & Recall@10 vs FlatIP & Indexed / points & Upsert / ready wait (s) & Note \\
+\midrule
+66{,}635 & 12.74 & 0.9988 & 66{,}635 / 66{,}635 & 13.5 / 1.0 & green \\
+250{,}000 & 8.91 & 0.9994 & 250{,}000 / 250{,}000 & 64.0 / 47.6 & green \\
+1{,}000{,}000 & 10.05 & 0.9994 & 1{,}000{,}000 / 1{,}000{,}000 & 224.2 / 439.3 & green \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

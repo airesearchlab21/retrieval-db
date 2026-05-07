@@ -1,0 +1,97 @@
+{
+  "description": "Controlled vector-index scale stress test. Uses real HOTPOTQA-MAXIONBENCH bge-small document/query embeddings plus deterministic random unit-vector distractors. This is not a full MaxionBench engine/workload row.",
+  "created_utc": "2026-05-07T02:27:45Z",
+  "faiss_version": "1.8.0",
+  "numpy_version": "1.26.4",
+  "python_version": "3.11.7",
+  "platform": "macOS-26.4.1-x86_64-i386-64bit",
+  "base_documents": 66635,
+  "embedding": "baai-bge-small-en-v1-5",
+  "seed": 20260506,
+  "results": [
+    {
+      "corpus_vectors": 66635,
+      "dim": 384,
+      "queries": 256,
+      "k": 10,
+      "flat": {
+        "index": "faiss.IndexFlatIP",
+        "build_s": 0.03218737500719726,
+        "approx_vector_memory_mb": 102.35136,
+        "p50_ms": 1.8694585014600307,
+        "p95_ms": 3.1862290197750553,
+        "p99_ms": 5.119000328704702,
+        "mean_ms": 2.274792984508167
+      },
+      "ivf": {
+        "index": "faiss.IndexIVFFlat",
+        "nlist": 1024,
+        "nprobe": 32,
+        "train_vectors": 50000,
+        "train_s": 2.369491500023287,
+        "add_s": 0.3218342090258375,
+        "recall_at_10_vs_flat": 0.898828125,
+        "p50_ms": 0.1608119928278029,
+        "p95_ms": 0.4195212386548519,
+        "p99_ms": 0.6197286362294107,
+        "mean_ms": 0.20557846460178553
+      }
+    },
+    {
+      "corpus_vectors": 250000,
+      "dim": 384,
+      "queries": 256,
+      "k": 10,
+      "flat": {
+        "index": "faiss.IndexFlatIP",
+        "build_s": 0.16878875001566485,
+        "approx_vector_memory_mb": 384.0,
+        "p50_ms": 14.410208008484915,
+        "p95_ms": 16.94230202701874,
+        "p99_ms": 25.741747414576796,
+        "mean_ms": 14.914903966882775
+      },
+      "ivf": {
+        "index": "faiss.IndexIVFFlat",
+        "nlist": 1024,
+        "nprobe": 32,
+        "train_vectors": 50000,
+        "train_s": 2.3971792919910513,
+        "add_s": 1.5172696249792352,
+        "recall_at_10_vs_flat": 0.970703125,
+        "p50_ms": 0.4772079992108047,
+        "p95_ms": 1.017271017190069,
+        "p99_ms": 2.3790916893631215,
+        "mean_ms": 0.5899267300719657
+      }
+    },
+    {
+      "corpus_vectors": 1000000,
+      "dim": 384,
+      "queries": 256,
+      "k": 10,
+      "flat": {
+        "index": "faiss.IndexFlatIP",
+        "build_s": 1.371062374964822,
+        "approx_vector_memory_mb": 1536.0,
+        "p50_ms": 56.98860451229848,
+        "p95_ms": 70.22030150983483,
+        "p99_ms": 247.26319153269245,
+        "mean_ms": 54.57818929221503
+      },
+      "ivf": {
+        "index": "faiss.IndexIVFFlat",
+        "nlist": 1024,
+        "nprobe": 32,
+        "train_vectors": 50000,
+        "train_s": 2.919274666986894,
+        "add_s": 6.828470375039615,
+        "recall_at_10_vs_flat": 0.99921875,
+        "p50_ms": 1.9511044665705413,
+        "p95_ms": 6.933354728971608,
+        "p99_ms": 11.463152756914461,
+        "mean_ms": 2.8396295574566466
+      }
+    }
+  ]
+}

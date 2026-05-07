@@ -14,12 +14,14 @@ The supplementary package also includes an artifact card, a consistency verifier
 \input{tables/cost_sensitivity}
 \input{tables/latency_distribution}
 \input{tables/strict_faiss_repeat_audit}
+\input{tables/faiss_scale_stress}
+\input{tables/cross_engine_scale_stress}
 \input{tables/decision_error_ablation}
 \input{tables/decision_surface}
 \input{tables/strict_decision_margins}
 \begin{figure}[t]
   \centering
-  \includegraphics[width=0.70\linewidth]{../figures/portable_s2_post_insert_retrievability.svg}
+  \includegraphics[width=0.70\linewidth]{../figures/portable_s2_post_insert_retrievability.pdf}
   \caption{S2 streaming post-insert top-10 retrievability for B2 strict survivors. One- and five-second probes overlap in the validated rows, showing no additional recoveries between the fixed probes.}
   \label{fig:s2-postinsert}
 \end{figure}
@@ -47,8 +49,9 @@ The supplementary package also includes an artifact card, a consistency verifier
   \item Claim: the selected rows are shown against the full decision surface. Evidence: Figure~\ref{fig:decision-surface} and Table~\ref{tab:decision-surface} show all B2 strict survivors plus objective winners outside the strict survivor set.
   \item Claim: strict decisions have different margins across workloads. Evidence: Table~\ref{tab:strict-decision-margins} shows S1 single-hop and S2 streaming as cost/quality ties resolved by latency and S3 multi-evidence as lower-cost and higher-quality than the next strict-cost candidate.
   \item Claim: objective choice changes deployment conclusions. Evidence: Table~\ref{tab:portable-decision-table} shows different quality-first winners for all workloads and a cost-only/no-p99 shift for S3 multi-evidence.
-  \item Claim: the S3 multi-evidence quality-first pgvector result is indistinguishable from FAISS under matched queries. Evidence: Figure~\ref{fig:s3-paired-audit} and Table~\ref{tab:s3-paired-quality} report a matched-query audit over the 5{,}000-query S3 multi-evidence matched-audit subset in which pgvector trails the FAISS exact FlatIP baseline by 0.0001 \ecov{} with paired 95\% interval [-0.0003, 0.0000].
+  \item Claim: the S3 multi-evidence quality-first pgvector result has no detectable advantage over FAISS under matched queries. Evidence: Figure~\ref{fig:s3-paired-audit} and Table~\ref{tab:s3-paired-quality} report a matched-query audit over the 5{,}000-query S3 multi-evidence matched-audit subset in which pgvector trails the FAISS exact FlatIP baseline by 0.0001 \ecov{} with paired 95\% interval [-0.0003, 0.0000].
   \item Claim: the S2 streaming competitor audit finds no Qdrant quality or post-insert retrievability advantage. Evidence: Table~\ref{tab:s2-write-diagnostics} summarizes B2 post-insert diagnostics, Table~\ref{tab:s2-post-insert-examples} gives strict-choice success/miss examples and counts, and Table~\ref{tab:s2-competitor-check} reports a larger same-machine paired check with 1{,}788 matched quality observations and 200 matched post-insert events.
+  \item Claim: corpus-size stress testing changes the interpretation from a universal FAISS-exact ranking to a local-regime result. Evidence: Table~\ref{tab:faiss-scale-stress} reports a controlled FAISS vector-scale check where exact FlatIP remains below 200 ms p99 at 1M vectors, but IVF reaches p99 9.45 ms with recall@10 0.9994 against FlatIP; Table~\ref{tab:cross-engine-scale-stress} adds a fully indexed Qdrant HNSW sanity check on the same vector construction through 1M vectors.
   \item Claim: budget stability is workload-dependent. Evidence: Figure~\ref{fig:budget-effects}; B0-to-B2 top-1 agreement is 0 for S1 single-hop and S2 streaming and 1 for S3 multi-evidence, with Spearman correlations 0.79, 0.43, and 0.31.
 \end{itemize}
 

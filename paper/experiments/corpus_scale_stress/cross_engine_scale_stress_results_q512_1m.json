@@ -1,0 +1,53 @@
+{
+  "description": "Controlled vector-index scale stress test. Uses real HOTPOTQA-MAXIONBENCH bge-small document/query embeddings plus deterministic random unit-vector distractors. Qdrant HNSW recall is measured against exact FAISS FlatIP top-10 at the same vector scale. This is not a full MaxionBench engine/workload row.",
+  "created_utc": "2026-05-07T03:32:00Z",
+  "faiss_version": "1.8.0",
+  "numpy_version": "1.26.4",
+  "python_version": "3.11.7",
+  "platform": "macOS-26.4.1-x86_64-i386-64bit",
+  "base_documents": 66635,
+  "embedding": "baai-bge-small-en-v1-5",
+  "seed": 20260506,
+  "qdrant_url": "http://127.0.0.1:6333",
+  "qdrant_config": {
+    "m": 64,
+    "ef_construct": 128,
+    "hnsw_ef": 256,
+    "full_scan_threshold": 10,
+    "batch_size": 2048
+  },
+  "results": [
+    {
+      "corpus_vectors": 1000000,
+      "dim": 384,
+      "queries": 512,
+      "k": 10,
+      "flat": {
+        "index": "faiss.IndexFlatIP",
+        "build_s": 1.1781951669836417,
+        "approx_vector_memory_mb": 1536.0,
+        "p50_ms": 28.933229012181982,
+        "p95_ms": 35.62944387376774,
+        "p99_ms": 46.08079102123156,
+        "mean_ms": 29.993749104619383
+      },
+      "qdrant": {
+        "index": "qdrant.HNSW",
+        "collection": "maxionbench_cross_scale_1000000",
+        "m": 64,
+        "ef_construct": 128,
+        "hnsw_ef": 256,
+        "full_scan_threshold": 10,
+        "upsert_s": 224.15560591698159,
+        "ready_wait_s": 439.2659524580231,
+        "recall_at_10_vs_flat": 0.9994140625,
+        "points_count": 1000000,
+        "indexed_vectors_count": 1000000,
+        "p50_ms": 4.162958008237183,
+        "p95_ms": 6.210862204898149,
+        "p99_ms": 10.050705773173826,
+        "mean_ms": 4.5797396383022715
+      }
+    }
+  ]
+}
